@@ -1,0 +1,93 @@
+/* Setting Variables
+Note: some variables might affect bootstrap
+*/
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+$fa-font-path: "../src/fontawesome/webfonts";
+@import './fontawesome/scss/fontawesome.scss';
+@import './fontawesome/scss/solid.scss';
+@import './fontawesome/scss/regular.scss';
+
+@import 'sass/header';
+@import 'sass/variables';
+@import 'sass/page-order';
+@import 'sass/product';
+
+/* overall settings */
+.text-sm {
+    font-size: 0.75rem;
+}
+.text-base {
+    font-size: 1rem;
+}
+.text-md {
+    font-size: 1.15rem;
+}
+.text-lg {
+    font-size: 1.2rem;
+}
+
+.d-sp {
+    display: block;
+}
+.d-pc {
+    display: none;
+}
+
+.text-gray {
+    color: #5a5a5a;
+}
+.text-gray-light {
+    color: rgba($color: #5a5a5a, $alpha: 0.04);
+}
+.bg-gray {
+    background: #5a5a5a;
+}
+.bg-gray-light {
+    background: rgba($color: #5a5a5a, $alpha: 0.04);
+}
+.text-green {
+    color: #71CFB8;
+}
+.bg-green {
+    background: #71CFB8;
+}
+
+.w-60 {
+    width: 15rem;
+}
+
+.border-bottom-gray {
+    border-bottom: solid 3px #5a5a5a;
+}
+
+body {
+    font-family: 'Yu Gothic Medium', sans-serif;
+}
+
+h1 {
+    color: #5a5a5a;
+    padding-bottom: 15px;
+    border-bottom: solid 2px #71CFB8;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #333;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 786px) {
+    .d-pc {
+        display: block;
+    }
+    .d-sp {
+        display: none;
+    }
+}
